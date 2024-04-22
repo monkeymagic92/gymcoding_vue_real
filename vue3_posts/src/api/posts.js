@@ -9,8 +9,8 @@ const posts = [
 ];
 
 // 전체조회
-export function getPosts() {
-  return axios.get('http://localhost:5000/posts');
+export function getPosts(params) {
+  return axios.get('http://localhost:5000/posts', { params });
 }
 
 // 단건조회
